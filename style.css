@@ -73,13 +73,15 @@ form.box-form {
 }
 
 .box-element {
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 input[type="text"],
 input[type="password"],
 input[type="email"],
-input[type="tel"] {
+input[type="tel"],
+select {
     margin-bottom: 10px;
     width: 100%;
     height: 100%;
@@ -112,4 +114,49 @@ input[type="email"] {
 input[type="tel"] {
     background: url(images/icons.png) no-repeat;
     background-position: 15px -153px;
+}
+
+select {
+    background: url(images/icons.png) no-repeat;
+    background-position: 15px -112px;
+}
+
+.accept-terms,
+.remember-me,
+.send-copy-mail {
+    width: 1.50em;
+    height: 1.50em;
+    color: rgba(100, 100, 100);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid rgba(100, 100, 100, .5);
+    border-radius: 5px;
+}
+
+
+.font-terms {
+    font-family: 'Titillium Web', sans-serif;
+    color: rgba(100, 100, 100);
+    font-size: 0.9em;
+    text-align: center;
+    margin-left: 5px;
+    position: relative;
+    top: -5px;
+}
+
+.accept-terms:checked,
+.remember-me:checked,
+.send-copy-mail:checked {
+    background: url(images/check.png) no-repeat center;
+}
+
+textarea {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    border: 0.5px solid rgb(198, 198, 198);
+    border-radius: 4px;
+    background-color: #f4f4f4;
 }
