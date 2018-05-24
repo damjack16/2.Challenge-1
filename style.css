@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 body {
     background-image: url(images/background.jpg);
     background-size: cover;
@@ -70,6 +71,19 @@ form.box-form {
     padding: 20px;
     background-color: #f4f4f4;
     border-radius: 3px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
 .box-element {
@@ -83,7 +97,7 @@ input[type="email"],
 input[type="tel"],
 select {
     margin-bottom: 10px;
-    width: 100%;
+    width: auto;
     height: 100%;
     padding: 10px 90px 10px 75px;
     -webkit-box-sizing: border-box;
@@ -159,4 +173,52 @@ textarea {
     border: 0.5px solid rgb(198, 198, 198);
     border-radius: 4px;
     background-color: #f4f4f4;
+}
+
+.green_button {
+    margin-top: 0.5rem;
+    width: 100%;
+    height: 3rem;
+    font-family: 'Titillium Web', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    border: 1px solid rgb(59, 154, 0);
+    cursor: pointer;
+    border-radius: 2px;
+    text-shadow: 1px 1px rgb(59, 154, 0);
+    background: rgb(143, 196, 0);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(143, 196, 0)), to(rgb(143, 196, 0)));
+    background: linear-gradient(to bottom, rgb(143, 196, 0) 0%, rgb(143, 196, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fc400', endColorstr='#8fc400', GradientType=0);
+}
+
+.green_button:hover {
+    background: rgb(157, 213, 58);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(157, 213, 58, 1)), color-stop(50%, rgba(161, 213, 79, 1)), color-stop(51%, rgba(128, 194, 23, 1)), to(rgba(124, 188, 10, 1)));
+    background: linear-gradient(to bottom, rgba(157, 213, 58, 1) 0%, rgba(161, 213, 79, 1) 50%, rgba(128, 194, 23, 1) 51%, rgba(124, 188, 10, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#7cbc0a', GradientType=0);
+}
+
+.green_button_small {
+    float: right;
+    width: 45%;
+    height: 2rem;
+    font-family: 'Titillium Web', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 0.9rem;
+    border: 1px solid rgb(59, 154, 0);
+    cursor: pointer;
+    border-radius: 2px;
+    text-shadow: 1px 1px rgb(59, 154, 0);
+    background: rgb(143, 196, 0);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(143, 196, 0)), to(rgb(143, 196, 0)));
+    background: linear-gradient(to bottom, rgb(143, 196, 0) 0%, rgb(143, 196, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fc400', endColorstr='#8fc400', GradientType=0);
+}
+
+.green_button_small:hover {
+    background: rgb(157, 213, 58);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(157, 213, 58, 1)), color-stop(50%, rgba(161, 213, 79, 1)), color-stop(51%, rgba(128, 194, 23, 1)), to(rgba(124, 188, 10, 1)));
+    background: linear-gradient(to bottom, rgba(157, 213, 58, 1) 0%, rgba(161, 213, 79, 1) 50%, rgba(128, 194, 23, 1) 51%, rgba(124, 188, 10, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#7cbc0a', GradientType=0);
 }
