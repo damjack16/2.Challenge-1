@@ -5,17 +5,14 @@
 
 
 body {
-    background-image: url(images/background.jpg);
+    background-image: url(images/background.png);
     background-size: cover;
 }
 
-header {
+header img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-}
-
-header img {
     -ms-flex-item-align: center;
     align-self: center;
     margin: 0 auto;
@@ -89,6 +86,7 @@ form.box-form {
 .box-element {
     padding-top: 10px;
     padding-bottom: 10px;
+    width: 100%;
 }
 
 input[type="text"],
@@ -97,7 +95,7 @@ input[type="email"],
 input[type="tel"],
 select {
     margin-bottom: 10px;
-    width: auto;
+    width: 100%;
     height: 100%;
     padding: 10px 90px 10px 75px;
     -webkit-box-sizing: border-box;
@@ -221,4 +219,52 @@ textarea {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(157, 213, 58, 1)), color-stop(50%, rgba(161, 213, 79, 1)), color-stop(51%, rgba(128, 194, 23, 1)), to(rgba(124, 188, 10, 1)));
     background: linear-gradient(to bottom, rgba(157, 213, 58, 1) 0%, rgba(161, 213, 79, 1) 50%, rgba(128, 194, 23, 1) 51%, rgba(124, 188, 10, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#7cbc0a', GradientType=0);
+}
+
+.red_button_small {
+    width: 45%;
+    height: 2rem;
+    font-family: 'Titillium Web', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 0.9rem;
+    border: 1px solid rgb(167, 44, 54);
+    cursor: pointer;
+    border-radius: 2px;
+    background: rgb(244, 75, 93);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 75, 93, 1)), to(rgba(246, 94, 111, 1)));
+    background: linear-gradient(to bottom, rgba(255, 75, 93, 1) 0%, rgba(246, 94, 111, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404', GradientType=0);
+}
+
+.red_button_small:hover {
+    background: rgb(248, 80, 50);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(248, 80, 50, 1)), color-stop(50%, rgba(241, 111, 92, 1)), color-stop(51%, rgba(246, 41, 12, 1)), color-stop(71%, rgba(240, 47, 23, 1)), to(rgba(231, 56, 39, 1)));
+    background: linear-gradient(to bottom, rgba(248, 80, 50, 1) 0%, rgba(241, 111, 92, 1) 50%, rgba(246, 41, 12, 1) 51%, rgba(240, 47, 23, 1) 71%, rgba(231, 56, 39, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=0);
+}
+
+.checkbox {
+    width: 100%;
+}
+
+
+.buttons {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+    align-self: center;
+    margin: 0 auto;
+    opacity: 0.24;
+    padding: 30px;
 }

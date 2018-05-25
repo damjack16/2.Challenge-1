@@ -44,9 +44,11 @@
                         <option value="Wrocław">Wrocław</option>
                     </select>
                     </div>
-                    <!--Register Form / Accept terms of use-->
-                    <input type="checkbox" class="accept-terms">
-                    <label for="accept-terms" class="font-terms">I have read and accept terms of use.</label><br>
+                    <div class="checkbox">
+                        <!--Register Form / Accept terms of use-->
+                        <input type="checkbox" class="accept-terms">
+                        <label for="accept-terms" class="font-terms">I have read and accept terms of use.</label><br>
+                    </div>
                     <!--Register Form / Sign up-->
                     <input class="green_button" type="submit" value="Sign up">
                 </form>
@@ -66,9 +68,11 @@
                     </div>
                     <!--Send mail / Type your message-->
                     <textarea class="textarea" name="message" placeholder="Type Your Message..." cols="20" rows="9"></textarea><br>
-                    <!--Send mail / Send copy to my Email-->
-                    <input type="checkbox" class="send-copy-mail">
-                    <label for="send-copy-mail" class="font-terms">Send a copy to my Email</label><br>
+                    <div class="checkbox">
+                        <!--Send mail / Send copy to my Email-->
+                        <input type="checkbox" class="send-copy-mail">
+                        <label for="send-copy-mail" class="font-terms">Send a copy to my Email</label><br>
+                    </div>
                     <!--Send mail / Send email-->
                     <input class="green_button" type="submit" value="Send Email">
                 </form>
@@ -88,11 +92,13 @@
                     <div class="box-element">
                         <input type="password" placeholder="Password" required>
                     </div>
-                    <!--Sign in Form / Remember Me-->
-                    <input type="checkbox" class="remember-me">
-                    <label for="remember-me" class="font-terms">Remember me</label>
-                    <!--Sign in Form / Sign In-->
-                    <input class="green_button_small" type="submit" value="Sign in">
+                    <div class="checkbox">
+                        <!--Sign in Form / Remember Me-->
+                        <input type="checkbox" class="remember-me">
+                        <label for="remember-me" class="font-terms">Remember me</label>
+                        <!--Sign in Form / Sign In-->
+                        <input class="green_button_small" type="submit" value="Sign in">
+                    </div>
                 </form>
             </div>
             <!--Recover Form-->
@@ -108,10 +114,12 @@
                     <div class="box-element">
                         <input type="tel" placeholder="Enter your Phone number" required>
                     </div>
-                    <!--Recover Form / Sign In-->
-                    <input class="green_button_small" type="submit" value="Sign in">
-                    <!--Recover Form / Done-->
-                    <input class="green_button_small" type="submit" value="Done">
+                    <div class="buttons">
+                        <!--Recover Form / Sign In-->
+                        <input class="green_button_small" type="submit" value="Sign in">
+                        <!--Recover Form / Done-->
+                        <input class="green_button_small" type="submit" value="Done">
+                    </div>
                 </form>
             </div>
             <!--Subscribe Form-->
@@ -127,16 +135,17 @@
                     <div class="box-element">
                         <input type="password" placeholder="Password" required>
                     </div>
-                    <!--Subscribe Form / Subscribe-->
-                    <input class="green_button_small" type="submit" value="Subscribe">
-                    <!--Subscribe Form / Done-->
-                    <input class="red_button_small" type="submit" value="No, Thanks">
+                    <div class="buttons">
+                        <!--Subscribe Form / Subscribe-->
+                        <input class="green_button_small" type="submit" value="Subscribe">
+                        <!--Subscribe Form / Done-->
+                        <input class="red_button_small" type="submit" value="No, Thanks">
+                    </div>
                 </form>
             </div>
+            <footer><img src="images/logo_footer.png"></footer>
         </div>
     </section>
-
-    <footer></footer>
 
 </body>
 
