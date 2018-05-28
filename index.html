@@ -21,19 +21,19 @@
                 <form class="box-form">
                     <!--Register Form / Username-->
                     <div class="box-element">
-                        <input type="text" placeholder="Username" required>
+                        <input type="text" placeholder="Username" pattern=".{4,}" title="Four or more characters" required>
                     </div>
                     <!--Register Form / Password-->
                     <div class="box-element">
-                        <input type="password" placeholder="Password" required><br>
+                        <input type="password" placeholder="Password" pattern=".{6,}" title="Six or more characters" required><br>
                     </div>
                     <!--Register Form / Confirm Password-->
                     <div class="box-element">
-                        <input type="password" placeholder="Confirm Password" required><br>
+                        <input type="password" placeholder="Confirm Password" pattern=".{6,}" title="Six or more characters" required><br>
                     </div>
                     <!--Register Form / Email-->
                     <div class="box-element">
-                        <input type="email" placeholder="Email" required>
+                        <input type="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
                     </div>
                     <!--Register Form / Location-->
                     <div class="box-element">
@@ -46,7 +46,7 @@
                     </div>
                     <div class="checkbox">
                         <!--Register Form / Accept terms of use-->
-                        <input type="checkbox" class="accept-terms">
+                        <input type="checkbox" class="accept-terms" required>
                         <label for="accept-terms" class="font-terms">I have read and accept terms of use.</label><br>
                     </div>
                     <!--Register Form / Sign up-->
@@ -64,10 +64,10 @@
                     </div>
                     <!--Send mail / Your E-mail-->
                     <div class="box-element">
-                        <input type="email" placeholder="Your Email" required>
+                        <input type="email" placeholder="Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
                     </div>
                     <!--Send mail / Type your message-->
-                    <textarea class="textarea" name="message" placeholder="Type Your Message..." cols="20" rows="9"></textarea><br>
+                    <textarea class="textarea" name="message" placeholder="Type Your Message..." cols="20" rows="9" required></textarea><br>
                     <div class="checkbox">
                         <!--Send mail / Send copy to my Email-->
                         <input type="checkbox" class="send-copy-mail">
@@ -86,11 +86,11 @@
                 <form class="box-form">
                     <!--Sign in Form / Username-->
                     <div class="box-element">
-                        <input type="text" placeholder="Username" required>
+                        <input type="text" placeholder="Username" pattern=".{4,}" title="Four or more characters" required>
                     </div>
                     <!--Sign in Form / Password-->
                     <div class="box-element">
-                        <input type="password" placeholder="Password" required>
+                        <input type="password" placeholder="Password" pattern=".{6,}" title="Six or more characters" required>
                     </div>
                     <div class="checkbox">
                         <!--Sign in Form / Remember Me-->
@@ -108,17 +108,17 @@
                 <form class="box-form">
                     <!--Recover Form / Email-->
                     <div class="box-element">
-                        <input type="email" placeholder="Enter your Email" required>
+                        <input type="email" placeholder="Enter your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
                     </div>
                     <!--Recover Form / Password-->
                     <div class="box-element">
-                        <input type="tel" placeholder="Enter your Phone number" required>
+                        <input type="tel" placeholder="Enter your Phone number" pattern="^\d{3}-\d{3}-\d{3}$" title="Format: xxx-xxx-xxx" required>
                     </div>
                     <div class="buttons">
                         <!--Recover Form / Sign In-->
                         <input class="green_button_small" type="submit" value="Sign in">
                         <!--Recover Form / Done-->
-                        <input class="green_button_small" type="submit" value="Done">
+                        <input class="green_button_done" type="submit" value="Done">
                     </div>
                 </form>
             </div>
@@ -129,11 +129,11 @@
                 <form class="box-form">
                     <!--Subscribe Form / Email-->
                     <div class="box-element">
-                        <input type="email" placeholder="Enter your Email" required>
+                        <input type="email" placeholder="Enter your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
                     </div>
                     <!--Subscribe Form / Password-->
                     <div class="box-element">
-                        <input type="password" placeholder="Password" required>
+                        <input type="password" placeholder="Password" pattern=".{6,}" title="Six or more characters" required>
                     </div>
                     <div class="buttons">
                         <!--Subscribe Form / Subscribe-->
