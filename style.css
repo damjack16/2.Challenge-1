@@ -292,7 +292,55 @@ footer {
     display: flex;
     -ms-flex-item-align: center;
     align-self: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin: 0 auto;
     opacity: 0.24;
     padding: 30px;
+}
+
+/* MEDIA QUERIES */
+
+/*Tablets*/
+
+@media all and (min-width: 480px) and (max-width: 768px) {}
+
+
+/*Phones*/
+
+@media all and (max-width: 480px) {
+
+    section.main-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-item-align: center;
+        align-self: center;
+    }
+
+    header img {
+        width: 80%;
+    }
+
+    footer img {
+        width: 80%;
+    }
+
+    div.left-side {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    div.right-side {
+        margin: 0 auto;
+        padding: 10px;
+        width: 100%;
+    }
+
 }
