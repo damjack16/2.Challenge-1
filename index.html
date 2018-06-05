@@ -18,25 +18,29 @@
     <section class="main-container">
         <div class="left-side">
             <!--Register Form-->
-            <h2>Register Form</h2>
+            <h1>Register Form</h1>
             <div class="input-container">
 
                 <form class="box-form">
                     <!--Register Form / Username-->
                     <div class="box-element">
-                        <input type="text" placeholder="Username" pattern=".{4,}" title="Four or more characters" required>
+                        <label for="username"></label>
+                        <input type="text" placeholder="Username" id="username" pattern=".{4,}" title="Four or more characters" required>
                     </div>
                     <!--Register Form / Password-->
                     <div class="box-element">
+                        <label for="password"></label>
                         <input type="password" placeholder="Password" id="password" pattern=".{6,}" title="Six or more characters" required><br>
                     </div>
                     <!--Register Form / Confirm Password-->
                     <div class="box-element">
+                        <label for="confirm_password"></label>
                         <input type="password" placeholder="Confirm Password" id="confirm_password" pattern=".{6,}" title="Six or more characters" required><br>
                     </div>
                     <!--Register Form / Email-->
                     <div class="box-element">
-                        <input type="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+                        <label for="email"></label>
+                        <input type="email" placeholder="Email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
                     </div>
                     <!--Register Form / Location-->
                     <div class="box-element">
@@ -57,17 +61,19 @@
                 </form>
             </div>
             <!--Send Email-->
-            <h2>Send Email</h2>
+            <h1>Send Email</h1>
             <div class="input-container">
 
                 <form class="box-form">
                     <!--Send mail / Your Name-->
                     <div class="box-element">
-                        <input type="text" placeholder="Your Name" required>
+                        <label for="name"></label>
+                        <input type="text" placeholder="Your Name" id="name" required>
                     </div>
                     <!--Send mail / Your E-mail-->
                     <div class="box-element">
-                        <input type="email" placeholder="Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+                        <label for="email"></label>
+                        <input type="email" placeholder="Your Email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
                     </div>
                     <!--Send mail / Type your message-->
                     <textarea class="textarea" name="message" placeholder="Type Your Message..." cols="20" rows="9" required></textarea><br>
@@ -77,72 +83,84 @@
                         <label for="send-copy-mail" class="font-terms">Send a copy to my Email</label><br>
                     </div>
                     <!--Send mail / Send email-->
-                    <input class="green_button" type="submit" value="Send Email">
+                    <label for="button"></label>
+                    <input class="green_button" type="submit" id="button" value="Send Email">
                 </form>
             </div>
         </div>
         <div class="right-side">
             <!--Sign in Form-->
-            <h2>Sign In Form</h2>
+            <h1>Sign In Form</h1>
             <div class="input-container">
 
                 <form class="box-form">
                     <!--Sign in Form / Username-->
                     <div class="box-element">
-                        <input type="text" placeholder="Username" pattern=".{4,}" title="Four or more characters" required>
+                        <label for="username"></label>
+                        <input type="text" placeholder="Username" id="username" pattern=".{4,}" title="Four or more characters" required>
                     </div>
                     <!--Sign in Form / Password-->
                     <div class="box-element">
-                        <input type="password" placeholder="Password" pattern=".{6,}" title="Six or more characters" required>
+                        <label for="password"></label>
+                        <input type="password" placeholder="Password" id="password" pattern=".{6,}" title="Six or more characters" required>
                     </div>
                     <div class="checkbox">
                         <!--Sign in Form / Remember Me-->
                         <input type="checkbox" class="remember-me" id="remember-me">
                         <label for="remember-me" class="font-terms">Remember me</label>
                         <!--Sign in Form / Sign In-->
-                        <input class="green_button_small" type="submit" value="Sign in">
+                        <label for="button"></label>
+                        <input class="green_button_small" type="submit" id="button" value="Sign in">
                     </div>
                 </form>
             </div>
             <!--Recover Form-->
-            <h2>Recover Form</h2>
+            <h1>Recover Form</h1>
             <div class="input-container">
 
                 <form class="box-form">
                     <!--Recover Form / Email-->
                     <div class="box-element">
-                        <input type="email" placeholder="Enter your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+                        <label for="email"></label>
+                        <input type="email" placeholder="Enter your Email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
                     </div>
                     <!--Recover Form / Password-->
                     <div class="box-element">
-                        <input type="tel" placeholder="Enter your Phone number" pattern="^\d{3}-\d{3}-\d{3}$" title="Format: xxx-xxx-xxx" required>
+                        <label for="phone"></label>
+                        <input type="tel" placeholder="Enter your Phone number" id="phone" pattern="^\d{3}-\d{3}-\d{3}$" title="Format: xxx-xxx-xxx" required>
                     </div>
                     <div class="buttons">
                         <!--Recover Form / Sign In-->
-                        <input class="green_button_small" type="submit" value="Sign in">
+                        <label for="button"></label>
+                        <input class="green_button_small" type="submit" id="button" value="Sign in">
                         <!--Recover Form / Done-->
-                        <input class="green_button_done" type="submit" value="Done">
+                        <label for="button"></label>
+                        <input class="green_button_done" type="submit" id="button" value="Done">
                     </div>
                 </form>
             </div>
             <!--Subscribe Form-->
-            <h2>Subscribe Form</h2>
+            <h1>Subscribe Form</h1>
             <div class="input-container">
 
                 <form class="box-form">
                     <!--Subscribe Form / Email-->
                     <div class="box-element">
-                        <input type="email" placeholder="Enter your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+                        <label for="email"></label>
+                        <input type="email" placeholder="Enter your Email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
                     </div>
                     <!--Subscribe Form / Password-->
                     <div class="box-element">
+                        <label for="password"></label>
                         <input type="password" placeholder="Password" id="password" pattern=".{6,}" title="Six or more characters" required>
                     </div>
                     <div class="buttons">
                         <!--Subscribe Form / Subscribe-->
-                        <input class="green_button_small" type="submit" value="Subscribe">
+                        <label for="button"></label>
+                        <input class="green_button_small" type="submit" id="button" value="Subscribe">
                         <!--Subscribe Form / Done-->
-                        <input class="red_button_small" type="reset" value="No, Thanks">
+                        <label for="button"></label>
+                        <input class="red_button_small" type="reset" id="button" value="No, Thanks">
                     </div>
                 </form>
             </div>

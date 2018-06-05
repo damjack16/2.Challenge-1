@@ -44,7 +44,7 @@ section.main-container {
     padding: 0px 0px 0px 30px;
 }
 
-h2 {
+h1 {
     font-family: 'Titillium Web', sans-serif;
     color: #FFFFFF;
     font-size: 1.8rem;
@@ -97,7 +97,7 @@ input[type="tel"],
 select {
     margin-bottom: 10px;
     width: 100%;
-    padding: 10px 90px 10px 75px;
+    padding: 10px 90px 10px 60px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border: 0.5px solid rgb(198, 198, 198);
@@ -313,7 +313,7 @@ footer {
 
 /*Tablets*/
 
-@media all and (min-width: 480px) and (max-width: 768px) {
+@media all and (min-width: 480px) and (max-width: 1024px) {
 
     section.main-container {
         display: -webkit-box;
@@ -337,6 +337,14 @@ footer {
         margin: 0 auto;
         padding: 10px;
         width: 60%;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        padding-right: 10px;
     }
 }
 
