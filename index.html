@@ -3,14 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width" , initial-scale=1.0>
+    <meta name="description" content="First challenge for Weekly Webdev Challenge">
+    <meta name="keywords" content="HTML, CSS, Webdev, Challenge">
+    <meta name="author" content="Damian Jackiewicz">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;subset=latin-ext" rel="stylesheet">
     <title>Challenge 1</title>
 </head>
 
 <body>
-    <header><img src="images/logo.png"></header>
+    <header><img src="images/logo.png" alt="LOGO"></header>
 
     <section class="main-container">
         <div class="left-side">
@@ -25,11 +28,11 @@
                     </div>
                     <!--Register Form / Password-->
                     <div class="box-element">
-                        <input type="password" placeholder="Password" pattern=".{6,}" title="Six or more characters" required><br>
+                        <input type="password" placeholder="Password" id="password" pattern=".{6,}" title="Six or more characters" required><br>
                     </div>
                     <!--Register Form / Confirm Password-->
                     <div class="box-element">
-                        <input type="password" placeholder="Confirm Password" pattern=".{6,}" title="Six or more characters" required><br>
+                        <input type="password" placeholder="Confirm Password" id="confirm_password" pattern=".{6,}" title="Six or more characters" required><br>
                     </div>
                     <!--Register Form / Email-->
                     <div class="box-element">
@@ -37,7 +40,7 @@
                     </div>
                     <!--Register Form / Location-->
                     <div class="box-element">
-                        <select name="text">
+                        <select name="text" required>
                         <option value disabled selected>Your location</option>
                         <option value="Warszawa">Warszawa</option>
                         <option value="Gdańsk">Gdańsk</option>
@@ -46,7 +49,7 @@
                     </div>
                     <div class="checkbox">
                         <!--Register Form / Accept terms of use-->
-                        <input type="checkbox" class="accept-terms" required>
+                        <input type="checkbox" class="accept-terms" id="accept-terms" required>
                         <label for="accept-terms" class="font-terms">I have read and accept terms of use.</label><br>
                     </div>
                     <!--Register Form / Sign up-->
@@ -70,7 +73,7 @@
                     <textarea class="textarea" name="message" placeholder="Type Your Message..." cols="20" rows="9" required></textarea><br>
                     <div class="checkbox">
                         <!--Send mail / Send copy to my Email-->
-                        <input type="checkbox" class="send-copy-mail">
+                        <input type="checkbox" class="send-copy-mail" id="send-copy-mail">
                         <label for="send-copy-mail" class="font-terms">Send a copy to my Email</label><br>
                     </div>
                     <!--Send mail / Send email-->
@@ -94,7 +97,7 @@
                     </div>
                     <div class="checkbox">
                         <!--Sign in Form / Remember Me-->
-                        <input type="checkbox" class="remember-me">
+                        <input type="checkbox" class="remember-me" id="remember-me">
                         <label for="remember-me" class="font-terms">Remember me</label>
                         <!--Sign in Form / Sign In-->
                         <input class="green_button_small" type="submit" value="Sign in">
@@ -133,21 +136,25 @@
                     </div>
                     <!--Subscribe Form / Password-->
                     <div class="box-element">
-                        <input type="password" placeholder="Password" pattern=".{6,}" title="Six or more characters" required>
+                        <input type="password" placeholder="Password" id="password" pattern=".{6,}" title="Six or more characters" required>
                     </div>
                     <div class="buttons">
                         <!--Subscribe Form / Subscribe-->
                         <input class="green_button_small" type="submit" value="Subscribe">
                         <!--Subscribe Form / Done-->
-                        <input class="red_button_small" type="submit" value="No, Thanks">
+                        <input class="red_button_small" type="reset" value="No, Thanks">
                     </div>
                 </form>
             </div>
-            <footer><img src="images/logo_footer.png"></footer>
+            <footer><img src="images/logo_footer.png" alt="BOTTOM LOGO"></footer>
         </div>
 
     </section>
 
+    <script type="text/javascript" src="main.js">
+
+
+    </script>
 </body>
 
 </html>

@@ -3,7 +3,6 @@
     padding: 0;
 }
 
-
 body {
     background-image: url(images/background.png);
     background-size: cover;
@@ -89,6 +88,8 @@ form.box-form {
     width: 100%;
 }
 
+/*INPUTS START*/
+
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -96,7 +97,6 @@ input[type="tel"],
 select {
     margin-bottom: 10px;
     width: 100%;
-    height: 100%;
     padding: 10px 90px 10px 75px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -112,7 +112,8 @@ input[type="text"]:valid,
 input[type="password"]:valid,
 input[type="email"]:valid,
 input[type="tel"]:valid,
-textarea:valid {
+textarea:valid,
+select:valid {
     border: 0.5px solid rgb(38, 255, 70);
 }
 
@@ -141,23 +142,13 @@ select {
     background-position: 15px -112px;
 }
 
-.accept-terms,
-.remember-me,
-.send-copy-mail {
-    width: 1.50em;
-    height: 1.50em;
-    color: rgba(100, 100, 100);
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: 1px solid rgba(100, 100, 100, .5);
-    border-radius: 5px;
-}
+/*INPUTS END*/
 
+/*CHECKBOXES START*/
 
 .font-terms {
     font-family: 'Titillium Web', sans-serif;
-    color: rgba(100, 100, 100);
+    color: rgb(100, 100, 100);
     font-size: 0.9em;
     text-align: center;
     margin-left: 5px;
@@ -165,11 +156,30 @@ select {
     top: -5px;
 }
 
+.accept-terms,
+.remember-me,
+.send-copy-mail {
+    width: 1.50em;
+    height: 1.50em;
+    color: rgb(100, 100, 100);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid rgba(100, 100, 100, .5);
+    border-radius: 5px;
+}
+
 .accept-terms:checked,
 .remember-me:checked,
 .send-copy-mail:checked {
     background: url(images/check.png) no-repeat center;
 }
+
+div.checkbox {
+    width: 100%;
+}
+
+/*CHECKBOXES END*/
 
 textarea {
     -webkit-box-sizing: border-box;
@@ -180,6 +190,8 @@ textarea {
     border-radius: 4px;
     background-color: #f4f4f4;
 }
+
+/*BUTTONS START*/
 
 .green_button {
     margin-top: 0.5rem;
@@ -271,11 +283,6 @@ form:invalid input.green_button_done {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=0);
 }
 
-div.checkbox {
-    width: 100%;
-}
-
-
 .buttons {
     width: 100%;
     display: -webkit-box;
@@ -285,6 +292,8 @@ div.checkbox {
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
+
+/*BUTTONS END*/
 
 footer {
     display: -webkit-box;
@@ -304,7 +313,32 @@ footer {
 
 /*Tablets*/
 
-@media all and (min-width: 480px) and (max-width: 768px) {}
+@media all and (min-width: 480px) and (max-width: 768px) {
+
+    section.main-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-item-align: center;
+        align-self: center;
+    }
+
+    div.left-side {
+        margin: 0 auto;
+        padding: 0;
+        width: 60%;
+    }
+
+    div.right-side {
+        margin: 0 auto;
+        padding: 10px;
+        width: 60%;
+    }
+}
 
 
 /*Phones*/
@@ -332,7 +366,7 @@ footer {
     }
 
     div.left-side {
-        margin: 0;
+        margin: 0 auto;
         padding: 0;
         width: 100%;
     }
@@ -343,4 +377,20 @@ footer {
         width: 100%;
     }
 
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        padding-right: 30px;
+    }
+
+}
+
+/*MOZILLA FIREFOX ADDITONAL SETTINGS*/
+
+@-moz-document url-prefix() {
+    textarea {
+        margin-bottom: 20px;
+    }
 }
